@@ -1,0 +1,32 @@
+/*p{
+    font-size: 64px;
+    color: purple;
+}  */   /*Lesson 1 */
+
+/* Lesson 2 */
+
+body {
+    font-size: 15px;
+}
+
+p{
+    color:purple;
+}
+
+h1,h2{     /* multiple selector */
+    color:blue;
+}
+
+.highlight{
+    text-transform:capitalize;
+    background-color:gold;
+}
+
+
+.gray{
+    color:gray;
+}
+
+#second{
+    font-style: italic;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width", initial-scale="1">
+            <title>My First Website</title>
+        </head>
+        <body>
+            <header>
+                <h1>My First Website!!</h1>
+                <h2>An HTML Playground</h2>
+                <h3>An HTML Playground</h3>
+                <h4>An HTML Playground</h4>
+                <h5>An HTML Playground</h5>
+                <h6>An HTML Playground</h6>
+
+                <p>Navigate to:</p>
+                <nav>
+                    <ol>
+                        <li><a href="#data">Go to table content</a></li>
+                    </ol>
+                </nav>
+                <br>
+            </header>  
+
+            <main>
+                <article id="html">
+                    <p>Lorem Ipsum is simply <b> dummy text </b>of the printing and typesetting industry. <i>Lorem Ipsum</i> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a href="https://www.google.com">specimen book</a>. It has survived not only<u> five centuries</u>, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the <strong>1960s </strong>with the release of Letraset sheets containing<em> Lorem Ipsum passages</em>, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </article>
+                <hr>
+                
+                <section id="html2">
+                    <p>Lorem Ipsum is simply <b> dummy text </b>of the printing and typesetting industry.<br> <i>Lorem Ipsum</i> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a href="https://www.google.com">specimen book</a>. It has survived not only<u> five centuries</u>, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the <strong>1960s </strong>with the release of Letraset sheets containing<em> Lorem Ipsum passages</em>, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
+                <hr>
+                
+                <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p> <!--tooltip-->
+                <!--entity ex:&nbsp(space), &gt(greater than), &lt(less than)
+                    &copy(copyright symbol)-->
+                <img src="https://placehold.co/300x200" border="5">
+
+                <ol>
+                    <li>apples
+                        <ul>
+                            <li>golden delicious</li>
+                            <li>granny smith</li>
+                            <li>gala</li>
+                        </ul>
+                    </li>    
+                    <li>oranges</li>
+                    <li>Pinapples</li>
+                    <li>mangoes</li>
+                    <li>drangonfruit</li>
+                </ol>
+
+                <dl>  <!--Description list-->
+                    <dt>North Pole</dt>   <!--Description term-->
+                    <dd>I hear this is<strong> cold!</strong></dd><!--Description data-->
+
+                    <dt>South Pole</dt>
+                    <dd>I hear this is <strong>hot!</strong></dd>
+                </dl>
+
+                <h3>Places I'd Like to visit</h3>
+                <p>I've heard good things about caribbean.</p>
+                <figure>   <!--With figure and figcaption elemnts we can see proper indentation.-->
+                    <img src="img/caribbean_beach.jpg" alt="caribbean_beach
+                        " title="I want to visit caribbean beach" width="400" height="225"
+                        loading="lazy"><!--loading is of 2 types eager and lazy-->
+                
+                    <figcaption>
+                        Caribbean beach gateway.
+                    </figcaption>
+                </figure>
+
+                <aside>
+                    <details>    <!--hide the details of the answer-->
+                        <summary>Guess the<mark> number of hours</mark> I code</summary>
+                        <p>I start at <time datetime="08:00">8 am </time>and code for 3 hours everyday.</p>
+                    </details>
+                </aside>
+                <br>
+
+                <section id="data">
+                <table border="10" cellpadding="10">
+                    <caption>My Expenses</caption>
+                    <tr>
+                        <th></th>
+                        <th>Month</th>
+                        <th>Rent</th>
+                        <th colspan="2">Utilities</th>
+                        <th>Groceries</th>
+                        <th>Eating Out</th>
+                        <th>Entertainment</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Fall</th>
+                        <th>August</th>
+                        <th>$1500</th>
+                        <th>$100</th>
+                        <th>$50</th>
+                        <th>$350</th>
+                        <th>$100</th>
+                        <th>$50</th>
+                    </tr>
+                    <tr>
+                        <th>June</th>
+                        <th>$1500</th>
+                        <th>$100</th>
+                        <th>$50</th>
+                        <th>$350</th>
+                        <th>$100</th>
+                        <th>$50</th>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>$1500</td>
+                        <td>$100</td>
+                        <td>$50</td>
+                        <th>$350</th>
+                        <th>$100</th>
+                        <th>$50</th>
+                    </tr>
+                </table>
+                </section>
+            </main>
+            <hr>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p>
+                    <label for="Firstname">FirstName:</label>
+                    <input type="Firsttext" name="Firstname" id="Firstname" placeholder="Jane" required autofocus>   <!--only 1 element can be made autofocus-->
+                </p>
+                <p>
+                    <label for="Lastname">LastName:</label>
+                    <input type="Lastname" name="Lastname" id="Lastname" required> 
+                </p>
+                <p>
+                    <label for="password">password:</label>
+                    <input type="Password" name="password" id="password" required> 
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"> 
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980">
+                </p>
+
+            <p>
+                <label for="coffee">Favorite coffee:</label>
+                <select name="coffee" id="coffee">
+                    <option value="regular"> Regular Coffee</option>
+                    <option value="iced coffee"> iced Coffee</option>
+                    <option value="latte" selected> Lattte</option>
+                    <option value="americano"> Americano</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>What is your favorite food</legend>
+            <p>
+                <input type="radio" name="food" id="food" value="tacos">
+                <label for="tacos">Tacos</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="food" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="food" value="others">
+                <label for="others">Others</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+                <input type="checkbox" name="pets" id="fish" value="fish">
+                <label for="fish">Fish</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="Dog" value="Dog">
+                <label for="Dog">Dog</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="others" value="others">
+                <label for="others">Other Pets</label>
+            </p>
+        
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">Your message:</label>
+            <br>
+            <textarea name="meassage" id="message" cols="30" rows="10" placeholder=" type your message here"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+            </form>
+        <hr>
+            <footer>
+                <ul>
+                    <li>Download an <a href="html.png" download>HTML5 favicon</a>   <!--dowloades the image -->
+                    </li>
+                    <li>
+                        contact me at <a href="mailto:random@gmail.com"> My email</a>  <!--sends an email to the mentioned email address-->
+                    </li>
+                    <li>
+                        Dial <a href="tel:+1234567890">My contact</a>  <!--In phone directly goes to dial screen-->
+                    </li>
+                
+                </ul>
+                <hr>
+                &lt;&lt;&lt;&copy; Sampada &gt;&gt;&gt;
+            </footer>
+        </body>
+    </html>
